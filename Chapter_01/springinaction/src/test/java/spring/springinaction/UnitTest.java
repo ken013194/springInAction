@@ -25,7 +25,8 @@ public class UnitTest {
 	
 	@Test
 	public void slayTheDragonUsingXml() {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("META-INF/config/KnightConfig.xml");
+		ClassPathXmlApplicationContext context = 
+				new ClassPathXmlApplicationContext("META-INF/config/KnightConfig.xml");
 		Knight knight = context.getBean(BraveKnight.class);
 		knight.embarkOnQuest();	//In this case the Quest are injected inside the KnightConfig.xml
 		context.close();
@@ -33,7 +34,8 @@ public class UnitTest {
 	
 	@Test
 	public void slayTheDragonUsingJava() {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(KnightConfig.class);
+		AnnotationConfigApplicationContext context = 
+				new AnnotationConfigApplicationContext(KnightConfig.class);
 		Knight knight = context.getBean(BraveKnight.class);
 		knight.embarkOnQuest();	//In this case the Quest are injected inside the KnightConfig.xml
 		context.close();
