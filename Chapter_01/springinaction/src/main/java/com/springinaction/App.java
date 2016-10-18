@@ -1,4 +1,4 @@
-package spring.springinaction;
+package com.springinaction;
 
 /**
  * Hello world!
