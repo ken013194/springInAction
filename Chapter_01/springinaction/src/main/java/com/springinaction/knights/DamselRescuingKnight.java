@@ -13,6 +13,10 @@ public class DamselRescuingKnight implements Knight{
 
 	private RescueDamselQuest quest;
 	
+	/**
+	 * How about if the Knight want to join another quest?
+	 * 
+	 */
 	public DamselRescuingKnight() {
 		this.quest = new RescueDamselQuest();
 	}

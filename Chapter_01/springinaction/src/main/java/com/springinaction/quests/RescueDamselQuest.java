@@ -1,6 +1,6 @@
 package com.springinaction.quests;
 
-public class RescueDamselQuest {
+public class RescueDamselQuest implements Quest{
 	
 	public void embark() {
 		
